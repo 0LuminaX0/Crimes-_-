@@ -8,7 +8,15 @@ for name in crimes:
                 dates[crime["Date"]["Day"]].append(crime)
             else:
                 dates[crime["Date"]["Day"]] = [crime]
-print(dumps(dates, indent=4))
+for date in dates:
+    d = 0
+    for crime in dates[date]:
+        d += 1
+        if d >= 3:
+            print("Niko, Date:", date)
+            print(dumps(dates[date], indent=4))
+
+
 
 
 
