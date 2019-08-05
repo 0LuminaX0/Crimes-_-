@@ -24,6 +24,10 @@ for line in lines:
     lin = line.split(",")
     if lin[5] not in crimes:
         crimes[lin[5]] = []
+    try:
+        day = int(lin[4])
+    except ValueError:
+        day = lin[4]
     crimes[lin[5]].append({
         first[0]: int(lin[0]),
         first[1]: lin[1],
@@ -32,10 +36,12 @@ for line in lines:
         "Date": {
             first[2]: int(lin[2]),
             first[3]: int(lin[3]),
-            first[4]: int(lin[4])
+            first[4]: day
         },
         first[8]: lin[8]
         })
 
 
 print(dumps(crimes, indent=4))
+
+
