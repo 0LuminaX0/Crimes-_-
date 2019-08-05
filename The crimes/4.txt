@@ -1,1 +1,0 @@
-[{"ID": 2, "City": "Trier", "Type": "theft", "Arrest": true, "Date": {"Year": 4319, "Month": 3, "Day": 14}, "Description": "robbed a fund to help robots without a master"}, {"ID": 7, "City": "Everland", "Type": "theft", "Arrest": true, "Date": {"Year": 4323, "Month": 10, "Day": 13}, "Description": "car theft"}]
