@@ -4,8 +4,8 @@ with open("task_3_add", "rt") as data:
 first = text.strip().split(",")
 print(first)
 for name in crimes:
-    for data in name:
-        for el in range(len(text)):
+    for data in crimes[name]:
+        for el in first:
             if el == data["Type"]:
                 print(name)
 
